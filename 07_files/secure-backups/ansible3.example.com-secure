@@ -1,0 +1,214 @@
+Sep  3 16:20:35 ansible3 polkitd[847]: Loading rules from directory /etc/polkit-1/rules.d
+Sep  3 16:20:35 ansible3 polkitd[847]: Loading rules from directory /usr/share/polkit-1/rules.d
+Sep  3 16:20:35 ansible3 polkitd[847]: Finished loading, compiling and executing 13 rules
+Sep  3 16:20:35 ansible3 polkitd[847]: Acquired the name org.freedesktop.PolicyKit1 on the system bus
+Sep  3 16:20:36 ansible3 sshd[980]: Server listening on 0.0.0.0 port 22.
+Sep  3 16:20:36 ansible3 sshd[980]: Server listening on :: port 22.
+Sep  3 16:45:25 ansible3 sshd[1621]: Accepted publickey for ansible from 192.168.10.10 port 56294 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 16:45:25 ansible3 systemd[1625]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 16:45:25 ansible3 sshd[1621]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 16:45:26 ansible3 sudo[1847]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-mkfybisudhivxtoxztzpyywhtpqyrnvs ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885526.0305603-4054-138842617582400/AnsiballZ_setup.py'
+Sep  3 16:45:26 ansible3 sudo[1847]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:45:26 ansible3 sudo[1847]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:45:27 ansible3 sudo[2061]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-vdlzqdjglzaeynxggzlsbfcagkbblqpg ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885527.0649638-4079-264945907943200/AnsiballZ_dnf.py'
+Sep  3 16:45:27 ansible3 sudo[2061]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:45:31 ansible3 sudo[2061]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:45:31 ansible3 sudo[2244]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-kbkfwfjczbxyaapaojkafykdejugsxti ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885531.5083814-4105-75816490485672/AnsiballZ_systemd.py'
+Sep  3 16:45:31 ansible3 sudo[2244]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:45:31 ansible3 sudo[2244]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:45:32 ansible3 sudo[2422]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ovahppplijxrqyoeriucrjzrzydvxscc ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885532.0423172-4114-281429801452456/AnsiballZ_get_url.py'
+Sep  3 16:45:32 ansible3 sudo[2422]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:45:32 ansible3 sudo[2422]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:45:32 ansible3 sudo[2598]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ydprellgjdmmzkombzqzgzqaizdgpppr ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885532.5393827-4129-254723296196350/AnsiballZ_systemd.py'
+Sep  3 16:45:32 ansible3 sudo[2598]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:45:32 ansible3 sudo[2598]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:46:32 ansible3 sshd[1644]: Received disconnect from 192.168.10.10 port 56294:11: disconnected by user
+Sep  3 16:46:32 ansible3 sshd[1644]: Disconnected from user ansible 192.168.10.10 port 56294
+Sep  3 16:46:32 ansible3 sshd[1621]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 16:49:00 ansible3 sshd[2633]: Accepted publickey for ansible from 192.168.10.10 port 40646 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 16:49:00 ansible3 systemd[2637]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 16:49:01 ansible3 sshd[2633]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 16:49:01 ansible3 sudo[2856]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-csqzawvhygstpxfyrkdhiqnlllcekpmr ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885741.1291912-4249-179344428451460/AnsiballZ_setup.py'
+Sep  3 16:49:01 ansible3 sudo[2856]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:49:01 ansible3 sudo[2856]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:49:02 ansible3 sudo[3069]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-mcwuroguyawumyjspbvmvfaftiyekktu ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885742.081466-4263-259339698669265/AnsiballZ_file.py'
+Sep  3 16:49:02 ansible3 sudo[3069]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:49:02 ansible3 sudo[3069]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:49:13 ansible3 sudo[3302]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-mxubviondcoacjqqfugmpovnbvjfobfu ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885753.6113553-4310-271557583968266/AnsiballZ_setup.py'
+Sep  3 16:49:13 ansible3 sudo[3302]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:49:14 ansible3 sudo[3302]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:49:14 ansible3 sudo[3515]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-zrxfpocysfghgjpbbzyvozyhmoeffqnx ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885754.569046-4332-210168810303883/AnsiballZ_file.py'
+Sep  3 16:49:14 ansible3 sudo[3515]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:49:14 ansible3 sudo[3515]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:49:15 ansible3 sudo[3691]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-nwqrnbexklvudrhapvtvxnbvquedljml ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885754.9416535-4341-279578743525834/AnsiballZ_systemd.py'
+Sep  3 16:49:15 ansible3 sudo[3691]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:49:15 ansible3 sudo[3691]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:49:16 ansible3 sudo[3902]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-oljbmwetbafvzvgtfluepfajtovozbjf ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756885755.8114967-4357-88510375335463/AnsiballZ_dnf.py'
+Sep  3 16:49:16 ansible3 sudo[3902]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 16:49:17 ansible3 sudo[3902]: pam_unix(sudo:session): session closed for user root
+Sep  3 16:50:17 ansible3 sshd[2653]: Received disconnect from 192.168.10.10 port 40646:11: disconnected by user
+Sep  3 16:50:17 ansible3 sshd[2653]: Disconnected from user ansible 192.168.10.10 port 40646
+Sep  3 16:50:17 ansible3 sshd[2633]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 17:51:41 ansible3 sshd[4260]: Accepted publickey for ansible from 192.168.10.10 port 55240 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 17:51:41 ansible3 systemd[4264]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:51:41 ansible3 sshd[4260]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:51:42 ansible3 sudo[4484]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-axwbrxbulttpxndfkqtinpidflenakkq ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889501.787907-4634-271315886556349/AnsiballZ_setup.py'
+Sep  3 17:51:42 ansible3 sudo[4484]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:51:42 ansible3 sudo[4484]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:51:42 ansible3 sudo[4697]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-hryhqfcecvvlugflukklboefphrrixzi ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889502.7629018-4659-91009305340800/AnsiballZ_dnf.py'
+Sep  3 17:51:42 ansible3 sudo[4697]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:51:43 ansible3 sudo[4697]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:51:43 ansible3 sudo[4874]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-dclmgcrlflpfbtoszkrpqfxmhlexdgjx ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889503.6889076-4659-257317397373327/AnsiballZ_dnf.py'
+Sep  3 17:51:43 ansible3 sudo[4874]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:51:44 ansible3 useradd[4884]: failed adding user 'mysql', exit code: 9
+Sep  3 17:51:45 ansible3 sudo[4874]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:52:45 ansible3 sshd[4281]: Received disconnect from 192.168.10.10 port 55240:11: disconnected by user
+Sep  3 17:52:45 ansible3 sshd[4281]: Disconnected from user ansible 192.168.10.10 port 55240
+Sep  3 17:52:45 ansible3 sshd[4260]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 17:53:08 ansible3 sshd[5474]: Accepted publickey for ansible from 192.168.10.10 port 47746 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 17:53:08 ansible3 systemd[5478]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:53:08 ansible3 sshd[5474]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:53:09 ansible3 sudo[5697]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-kxplrylooojtpsnbluaksvfncuqdpuxw ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889588.9581773-5225-21308854999923/AnsiballZ_setup.py'
+Sep  3 17:53:09 ansible3 sudo[5697]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:53:09 ansible3 sudo[5697]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:53:10 ansible3 sudo[5910]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ukeygsbxfnecjmuiuvibjmipbcxefrcl ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889589.937541-5250-33577063812531/AnsiballZ_dnf.py'
+Sep  3 17:53:10 ansible3 sudo[5910]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:53:10 ansible3 sudo[5910]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:53:10 ansible3 sudo[6087]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-lmxglkvavtcxgtvisetyteamuupbafsi ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889590.848575-5266-80488865662708/AnsiballZ_dnf.py'
+Sep  3 17:53:10 ansible3 sudo[6087]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:53:11 ansible3 sudo[6087]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:54:11 ansible3 sshd[5494]: Received disconnect from 192.168.10.10 port 47746:11: disconnected by user
+Sep  3 17:54:11 ansible3 sshd[5494]: Disconnected from user ansible 192.168.10.10 port 47746
+Sep  3 17:54:11 ansible3 sshd[5474]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 17:55:05 ansible3 sshd[6120]: Accepted publickey for ansible from 192.168.10.10 port 45430 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 17:55:05 ansible3 systemd[6124]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:55:05 ansible3 sshd[6120]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:55:06 ansible3 sudo[6343]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-zthoctcjjcticuiwcsgypkyzpbzpxwmm ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889705.7187638-5322-65276866507919/AnsiballZ_setup.py'
+Sep  3 17:55:06 ansible3 sudo[6343]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:06 ansible3 sudo[6343]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:06 ansible3 sudo[6556]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-qnerxhcvagfsxqptlxrszwhpyndjvqza ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889706.6786892-5347-79103522341297/AnsiballZ_dnf.py'
+Sep  3 17:55:06 ansible3 sudo[6556]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:07 ansible3 sudo[6556]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:07 ansible3 sudo[6733]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-fhzuapbswsyoclrewagmjxmkmtffvwhu ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889707.5979252-5363-153905093631994/AnsiballZ_systemd.py'
+Sep  3 17:55:07 ansible3 sudo[6733]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:08 ansible3 sudo[6733]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:29 ansible3 sudo[7074]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-dyktomigqmavshjbpkirguyzitesycgt ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889728.6765578-5393-49092451221862/AnsiballZ_setup.py'
+Sep  3 17:55:29 ansible3 sudo[7074]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:29 ansible3 sudo[7074]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:29 ansible3 sudo[7287]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-wfputnopiinvbbrdjvlrqgkcjqjyvflj ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889729.6374595-5415-374846233703/AnsiballZ_dnf.py'
+Sep  3 17:55:29 ansible3 sudo[7287]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:30 ansible3 sudo[7287]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:30 ansible3 sudo[7464]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-pqlikaslvvbukjtrgkcawowirrbfjswe ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889730.553049-5431-114468888435311/AnsiballZ_dnf.py'
+Sep  3 17:55:30 ansible3 sudo[7464]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:31 ansible3 sudo[7464]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:31 ansible3 sudo[7641]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-udwguvvpkgrenvkudnimnusszdyaszau ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889731.4124048-5441-166676271250682/AnsiballZ_systemd.py'
+Sep  3 17:55:31 ansible3 sudo[7641]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:31 ansible3 sudo[7641]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:38 ansible3 sudo[7875]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-kamkxtlsqeibdjxuropyabtyfwdnjgzp ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889737.6768856-5475-76111023047058/AnsiballZ_setup.py'
+Sep  3 17:55:38 ansible3 sudo[7875]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:38 ansible3 sudo[7875]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:38 ansible3 sudo[8088]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-vrhhvngzweldtlualczrugdbifvrowbl ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889738.6420403-5486-210061965130128/AnsiballZ_dnf.py'
+Sep  3 17:55:38 ansible3 sudo[8088]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:40 ansible3 sudo[8088]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:55:40 ansible3 sudo[8437]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-qyqmwueelpjpaembovxmcpgtyumljpts ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889740.2629619-5515-220814626339284/AnsiballZ_systemd.py'
+Sep  3 17:55:40 ansible3 sudo[8437]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:55:40 ansible3 sudo[8437]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:56:40 ansible3 sshd[6140]: Received disconnect from 192.168.10.10 port 45430:11: disconnected by user
+Sep  3 17:56:40 ansible3 sshd[6140]: Disconnected from user ansible 192.168.10.10 port 45430
+Sep  3 17:56:40 ansible3 sshd[6120]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 17:57:33 ansible3 sshd[8470]: Accepted publickey for ansible from 192.168.10.10 port 46332 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 17:57:33 ansible3 systemd[8474]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:57:34 ansible3 sshd[8470]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:57:34 ansible3 sudo[8692]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-igzjwcpzjmjdqopnflqnkuozuoozjzrd ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889854.1015053-5568-77819203597535/AnsiballZ_setup.py'
+Sep  3 17:57:34 ansible3 sudo[8692]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:57:34 ansible3 sudo[8692]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:57:35 ansible3 sudo[8905]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-qqvblqtyltbcjmtzeehbopsvrposqydr ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889855.077662-5593-149534623011921/AnsiballZ_command.py'
+Sep  3 17:57:35 ansible3 sudo[8905]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:57:35 ansible3 sudo[8905]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:57:35 ansible3 sudo[9082]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-stbbttaseleeuhbvwqjclkzvmewcakzf ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889855.4641657-5604-142995343862637/AnsiballZ_dnf.py'
+Sep  3 17:57:35 ansible3 sudo[9082]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:57:36 ansible3 sudo[9082]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:57:36 ansible3 sudo[9259]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-rjvzbqrfljczmsgjcjyvbwaizmmzgnll ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889856.3782883-5620-16320772201387/AnsiballZ_systemd.py'
+Sep  3 17:57:36 ansible3 sudo[9259]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:57:36 ansible3 sudo[9259]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:58:36 ansible3 sshd[8489]: Received disconnect from 192.168.10.10 port 46332:11: disconnected by user
+Sep  3 17:58:36 ansible3 sshd[8489]: Disconnected from user ansible 192.168.10.10 port 46332
+Sep  3 17:58:36 ansible3 sshd[8470]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 17:58:37 ansible3 sshd[9291]: Accepted publickey for ansible from 192.168.10.10 port 58452 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 17:58:37 ansible3 sshd[9291]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 17:58:38 ansible3 sudo[9497]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-lquwkkixctgmulyfyyxfatpewpfymhse ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889917.9111514-5661-78360865197976/AnsiballZ_setup.py'
+Sep  3 17:58:38 ansible3 sudo[9497]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:58:38 ansible3 sudo[9497]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:58:39 ansible3 sudo[9710]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-aslbxopbycsxkdbduexkiulbkhipaimt ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889918.8891234-5686-172096575322010/AnsiballZ_command.py'
+Sep  3 17:58:39 ansible3 sudo[9710]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:58:39 ansible3 sudo[9710]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:58:39 ansible3 sudo[9887]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-xcrgqgsztxgglpujovhwhedwikudfiwz ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889919.296837-5697-66334727787500/AnsiballZ_dnf.py'
+Sep  3 17:58:39 ansible3 sudo[9887]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:58:40 ansible3 sudo[9887]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:58:40 ansible3 sudo[10064]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-mhadinwiramclvuykxsybruwmrkdgntj ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756889920.21622-5713-265619742829125/AnsiballZ_systemd.py'
+Sep  3 17:58:40 ansible3 sudo[10064]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 17:58:40 ansible3 sudo[10064]: pam_unix(sudo:session): session closed for user root
+Sep  3 17:59:40 ansible3 sshd[9294]: Received disconnect from 192.168.10.10 port 58452:11: disconnected by user
+Sep  3 17:59:40 ansible3 sshd[9294]: Disconnected from user ansible 192.168.10.10 port 58452
+Sep  3 17:59:40 ansible3 sshd[9291]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 18:00:12 ansible3 sshd[10102]: Accepted publickey for ansible from 192.168.10.10 port 52360 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 18:00:12 ansible3 systemd[10106]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 18:00:12 ansible3 sshd[10102]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 18:00:13 ansible3 sudo[10325]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-wftzjnmyowerpgzoepywheeeaztpuqkr ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890012.8589034-5753-131478487932969/AnsiballZ_setup.py'
+Sep  3 18:00:13 ansible3 sudo[10325]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:00:13 ansible3 sudo[10325]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:00:14 ansible3 sudo[10538]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-bjlywujytoktssfnmmjknifgnyuyaowb ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890013.8507502-5778-243417951519244/AnsiballZ_command.py'
+Sep  3 18:00:14 ansible3 sudo[10538]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:00:14 ansible3 sudo[10538]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:00:14 ansible3 sudo[10715]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ydseqfnehqpefklknfbiymitwgegjxjp ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890014.2469168-5789-25899745145510/AnsiballZ_dnf.py'
+Sep  3 18:00:14 ansible3 sudo[10715]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:00:15 ansible3 sudo[10715]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:00:15 ansible3 sudo[10892]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-kxjwsqpqromdbhxjeylikuukgqpvrqod ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890015.2128499-5805-254872434673684/AnsiballZ_dnf.py'
+Sep  3 18:00:15 ansible3 sudo[10892]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:00:15 ansible3 sudo[10892]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:00:16 ansible3 sudo[11069]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-yzuxpdgancjmvxutdfsznsregsqgncfq ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890016.0753021-5814-97680074695015/AnsiballZ_systemd.py'
+Sep  3 18:00:16 ansible3 sudo[11069]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:00:16 ansible3 sudo[11069]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:01:16 ansible3 sshd[10122]: Received disconnect from 192.168.10.10 port 52360:11: disconnected by user
+Sep  3 18:01:16 ansible3 sshd[10122]: Disconnected from user ansible 192.168.10.10 port 52360
+Sep  3 18:01:16 ansible3 sshd[10102]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 18:07:52 ansible3 sshd[11115]: Accepted publickey for ansible from 192.168.10.10 port 33530 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 18:07:52 ansible3 systemd[11119]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 18:07:52 ansible3 sshd[11115]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 18:07:52 ansible3 sudo[11339]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-nlwbempyxfhxvxtayxspbzfldmldqwgu ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890472.442902-6108-20817119396813/AnsiballZ_setup.py'
+Sep  3 18:07:52 ansible3 sudo[11339]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:07:53 ansible3 sudo[11339]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:07:53 ansible3 sudo[11552]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-ngwvjtaisrlxbstjppkvnayqpdqavirf ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890473.4092574-6133-266521240596042/AnsiballZ_systemd.py'
+Sep  3 18:07:53 ansible3 sudo[11552]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:07:54 ansible3 sudo[11552]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:07:54 ansible3 sudo[11733]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-hvwgmxztpzqosyqumyrjiyyfrwrgqpqv ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890474.1751847-6149-154203067253748/AnsiballZ_dnf.py'
+Sep  3 18:07:54 ansible3 sudo[11733]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:07:55 ansible3 sudo[11733]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:08:03 ansible3 sudo[12224]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-gqjwxuatnjoudxlcwwwbqubxgygmndzl ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890482.8756287-6185-105885209443740/AnsiballZ_setup.py'
+Sep  3 18:08:03 ansible3 sudo[12224]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:08:03 ansible3 sudo[12224]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:08:04 ansible3 sudo[12437]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-wfhtpswxjktjebpgwuoudlucgdkprpxu ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756890483.8211772-6207-219444251622305/AnsiballZ_systemd.py'
+Sep  3 18:08:04 ansible3 sudo[12437]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 18:08:04 ansible3 sudo[12437]: pam_unix(sudo:session): session closed for user root
+Sep  3 18:09:04 ansible3 sshd[11136]: Received disconnect from 192.168.10.10 port 33530:11: disconnected by user
+Sep  3 18:09:04 ansible3 sshd[11136]: Disconnected from user ansible 192.168.10.10 port 33530
+Sep  3 18:09:04 ansible3 sshd[11115]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 18:23:34 ansible3 systemd[12484]: pam_unix(systemd-user:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 18:23:34 ansible3 login[1018]: pam_unix(login:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 18:23:34 ansible3 login[1018]: LOGIN ON tty1 BY ansible
+Sep  3 20:00:57 ansible3 sshd[12574]: Accepted publickey for ansible from 192.168.10.10 port 42238 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 20:00:57 ansible3 sshd[12574]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 20:00:58 ansible3 sudo[12780]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-mdjoormbnrvhyzyymeltmxryxglnxzpv ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756897257.827375-8068-156394007450442/AnsiballZ_setup.py'
+Sep  3 20:00:58 ansible3 sudo[12780]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 20:00:58 ansible3 sudo[12780]: pam_unix(sudo:session): session closed for user root
+Sep  3 20:01:01 ansible3 sudo[13004]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-blnlmmgpudqbihzjgrlwboymtkfxeknv ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756897261.6710792-8187-224806200297002/AnsiballZ_slurp.py'
+Sep  3 20:01:01 ansible3 sudo[13004]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 20:01:02 ansible3 sudo[13004]: pam_unix(sudo:session): session closed for user root
+Sep  3 20:02:02 ansible3 sshd[12577]: Received disconnect from 192.168.10.10 port 42238:11: disconnected by user
+Sep  3 20:02:02 ansible3 sshd[12577]: Disconnected from user ansible 192.168.10.10 port 42238
+Sep  3 20:02:02 ansible3 sshd[12574]: pam_unix(sshd:session): session closed for user ansible
+Sep  3 20:03:01 ansible3 sshd[13039]: Accepted publickey for ansible from 192.168.10.10 port 39394 ssh2: RSA SHA256:Vz2hQjsGmpIfnbnV+Sn8LV3ehSinEPT4qVdx3FVmPw8
+Sep  3 20:03:01 ansible3 sshd[13039]: pam_unix(sshd:session): session opened for user ansible(uid=1001) by ansible(uid=0)
+Sep  3 20:03:02 ansible3 sudo[13245]: ansible : TTY=pts/0 ; PWD=/home/ansible ; USER=root ; COMMAND=/bin/sh -c 'echo BECOME-SUCCESS-kikblipyviwwkxmsqygwxgdekvwuffia ; /usr/bin/python3 /home/ansible/.ansible/tmp/ansible-tmp-1756897381.7483048-8449-190814895723365/AnsiballZ_setup.py'
+Sep  3 20:03:02 ansible3 sudo[13245]: pam_unix(sudo:session): session opened for user root(uid=0) by ansible(uid=1001)
+Sep  3 20:03:02 ansible3 sudo[13245]: pam_unix(sudo:session): session closed for user root

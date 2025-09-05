@@ -1,0 +1,45 @@
+---
+- name: Restore-web-db.yml
+  hosts: all
+  tasks:
+
+    - name: 1) 방화벽 제거 - mysql, http, https
+      ansible.posix.firewalld:
+        service: "{{ item }}"
+        permanent: true
+        immediate: true
+        state: disabled
+      loop:
+        - mysql
+        - http
+        - https
+
+    - name: 2) 서비스 종료 - httpd, mariadb
+      ansible.builtin.systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: false
+      loop:
+        - httpd
+        - mariadb
+
+    - name: 3) index.php 파일 삭제
+      ansible.builtin.file:
+        path: "{{ item }}"
+        state: absent
+      loop:
+        - /var/www/html/index.php
+        - /var/lib/mysql
+
+    - name: 4) DB 패키지 삭제 - mariadb, mariadb-server, ...
+      ansible.builtin.yum:
+        name:
+          - httpd
+          - mod_ssl
+          - php
+          - php-mysqlnd
+          - php-pdo
+          - mariadb
+          - mariadb-server
+          - python3-PyMySQL
+        state: absent

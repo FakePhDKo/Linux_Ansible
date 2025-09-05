@@ -1,0 +1,56 @@
+---
+- name:
+  hosts: all
+  gather_facts: true
+  become: true
+  vars_files:
+    - vars/vars.yml
+  tasks:
+    ##############################################
+    # 0) 점검 - MEM > 256, 배포판: CentOS
+    # 1) 패키지 설치 - httpd, mod_ssl, firewalld
+    # 2) 서비스 기동 - httpd, firewalld
+    # 3) 웹 서버 설정(notify)
+    #   * /etc/pki/tls/certs/localhost.crt
+    #   * /etc/pki/tls/private/localhost.key
+    #   * /var/www/html/index.html
+    # 4) 방화벽 포트 등록 - http, https
+    # 5) handlers 정의
+    ##############################################
+      - name: 0) 점검 - MEM > 256, 배포판 CentOS
+        ansible.builtin.fail:
+          msg: "메모리가 256M 보다 작거나 CentOS가 아닙니다!"
+        when: >
+          ansible_memtotal_mb < min_ram_mb or
+          ansible_distribution != "CentOS"
+
+      - name: 0) 점검 - 배포판 버전 점검
+        ansible.builtin.fail:
+          msg: "CentOS Stream 9 버전에서만 동작합니다!"
+        failed_when: ansible_distribution_version != "9"
+
+      
+      - name: 1) 방화벽 등록 - {{ firewall_rules }}
+        ansible.posix.firewalld:
+          service: "{{ item }}"
+          permanent: true
+          immediate: true
+          state: disabled
+        loop: "{{ firewall_rules }}"
+
+      - name: 2) 웹 서버 설정 파일 삭제
+        ansible.builtin.file:
+          path: /var/www/html/index.html
+          state: absent
+
+      - name: 3) 서비스 중지 - {{ services }}
+        ansible.builtin.systemd:
+          service: "{{ item }}"
+          state: stopped
+          enabled: false
+        loop: "{{ services }}"
+        
+      - name: 4) 패키지 삭제 - {{ packages }}
+        ansible.builtin.dnf:
+          name: "{{ packages }}"
+          state: absent

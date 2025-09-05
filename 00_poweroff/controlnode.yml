@@ -1,0 +1,7 @@
+---
+- name: 서버 종료
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: 컨트롤 노드 서버 종료
+      ansible.builtin.command: shutdown -h now

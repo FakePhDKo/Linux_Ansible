@@ -1,0 +1,5 @@
+---
+- name: yum remove -y rhel-system-roles 실행
+  hosts:
+  tasks:
+    - name: rhel-system-roles 패키지 삭제

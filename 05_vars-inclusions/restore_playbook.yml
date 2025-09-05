@@ -1,0 +1,10 @@
+---
+- name: 패키지 설치 복원 작업
+  hosts: all
+  tasks:
+    - name: 패키지 삭제
+      ansible.builtin.include_tasks: remove_package.yml
+      vars:
+        packages:
+          - httpd
+          - tomcat

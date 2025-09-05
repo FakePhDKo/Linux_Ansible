@@ -1,0 +1,46 @@
+---
+- name: Play1 웹 서버 설정
+  hosts: webserver
+  vars:
+    pkg_http_web: httpd
+    pkg_https_web: mod_ssl
+    pkg_fw: firewalld
+    pkg_python: python3-PyMySQL
+    basedir: /var/www/html
+    indexfile: "{{ basedir }}/index.html"
+    svc_web: httpd
+    svc_fw: firewalld
+    fw_var1: http
+    fw_var2: https
+  tasks:
+    - name: 1) 방화벽 삭제
+      ansible.posix.firewalld:
+        service: "{{ item }}"
+        permanent: true
+        immediate: true
+        state: disabled
+      loop:
+        - "{{ fw_var1 }}"
+        - "{{ fw_var2 }}"
+
+    - name: 2) 서비스 중지
+      ansible.builtin.systemd:
+        name: "{{ item }}"
+        state: stopped
+        enabled: false
+      loop:
+        - "{{ svc_web }}"
+        - "{{ svc_fw }}"
+
+    - name: 3) WEB 서비스 파일 삭제
+      ansible.builtin.file:
+        path: "{{ indexfile }}"
+        state: absent
+
+    - name: 4) 패키지 삭제
+      ansible.builtin.dnf:
+        name:
+          - "{{ pkg_http_web }}"
+          - "{{ pkg_https_web }}"
+          - "{{ pkg_python }}"
+        state: absent

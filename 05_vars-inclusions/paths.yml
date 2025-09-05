@@ -1,0 +1,4 @@
+---
+paths:
+  fileserver: /home/ansible/src/filter/{{ ansible_fqdn }}
+  dbpath: /home/ansible/srv/database/{{ ansible_fqdn }}

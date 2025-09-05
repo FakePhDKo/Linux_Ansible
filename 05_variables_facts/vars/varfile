@@ -1,0 +1,22 @@
+packages:
+    - firewalld
+    - httpd
+    - mod_ssl
+
+service:
+    - firewalld
+    - httpd
+
+httpd_src: files/httpd.conf
+
+httpd_dest: /etc/httpd/conf/httpd.conf
+
+htaccess_src: files/.htaccess
+
+secrets_dir: /etc/httpd/secrets
+
+secrets_src: files/htpasswd
+
+secrets_dest: /etc/httpd/secrets/htpasswd
+
+web_root: /var/www/html

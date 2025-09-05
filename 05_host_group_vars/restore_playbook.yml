@@ -1,0 +1,8 @@
+---
+- name: 인벤토리 변수 테스트 복구
+  hosts: all
+  tasks:
+    - name: 패키지 파일 삭제 - {{ packages }}
+      ansible.builtin.yum:
+        name: "{{ package }}"
+        state: absent

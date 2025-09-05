@@ -1,0 +1,36 @@
+---
+- name: 작업 실패 테스트
+  hosts: databases
+  vars:
+    web_pkg: httpd
+    db_pkg: mariadb-server
+    db_service: mariadb
+  tasks:
+    - name: Check local time
+      ansible.builtin.command: date
+      register: command_result
+      changed_when: false
+
+    - name: Print local time
+      ansible.builtin.debug:
+        var: command_result.stdout
+
+    - name: 패키지 설치
+      block:
+        - name: 패키지 설치 {{ web_pkg }}
+          ansible.builtin.dnf:
+            name: "{{ web_pkg }}"
+            state: present
+          failed_when: web_pkg == "httpd"
+
+      rescue:
+        - name: 패키지 설치 {{ db_pkg }}
+          ansible.builtin.dnf:
+            name: "{{ db_pkg }}"
+            state: present
+
+      always:
+        - name: 서비스 가동 - {{ db_service }}
+          ansible.builtin.systemd:
+            service: "{{ db_service }}"
+            state: started

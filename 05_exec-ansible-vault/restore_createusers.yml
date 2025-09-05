@@ -1,0 +1,12 @@
+---
+- name: 사용자 생성 Restore 
+  hosts: devservers
+  vars_files:
+    - vars/secret.yml
+  tasks:
+    - name: 사용자 생성 Restore
+      ansible.builtin.user:
+        name: "{{ item.name }}"
+        state: absent
+        remove: true
+      loop: "{{ newusers }}"

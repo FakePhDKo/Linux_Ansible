@@ -1,0 +1,31 @@
+---
+- name: 작업 실패 테스트 복구
+  hosts: all
+  vars:
+    web_pkg: httpd
+    db_pkg: mariadb-server
+    db_service: mariadb
+  tasks:
+    - name: 패키지 설치
+      block:
+        - name: 서비스 중지 - {{ db_service }}
+          ansible.builtin.systemd:
+            service: "{{ db_service }}"
+            state: stopped
+
+        - name: 패키지 삭제 {{ web_pkg }} {{ db_pkg }}
+          ansible.builtin.dnf:
+            name: 
+              - "{{ web_pkg }}"
+              - "{{ db_pkg }}"
+            state: absent
+
+      rescue:
+        - name: 패키지 삭제 실패 메세지
+          ansible.builtin.debug:
+            msg: "[ FAIL ] 패키지 삭제 실패! - {{ web_pkg }} {{ db_pkg }}"       
+
+      always:
+        - name: 업데이트 완료 메세지
+          ansible.builtin.debug:
+            msg: "프로세스가 완료되었습니다."
