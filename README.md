@@ -84,7 +84,7 @@
 플레이북 실행:
 
 Bash
-```
+```bash
 cd Ansible_Study
 ansible-playbook playbook.yml --ask-vault-password
 --ask-vault-password # 옵션은 암호화된 파일에 접근하기 위해 필요할 수 있습니다.
